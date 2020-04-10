@@ -3,18 +3,13 @@ import time
 
 class WhatsappBot:
     def __init__(self):
-        self.mensagem = "Da uma chupada na cabeça do meu pau"
-        self.grupos = ["João COTEMIG","Eu"]
+        self.mensagem = "Teste de bot utilizando Python"
+        self.grupos = ["Eu"]
         options = webdriver.ChromeOptions();
         options.add_argument('lang=pt-br')
         self.driver = webdriver.Chrome(executable_path=r'./chromedriver.exe')
 
     def EnviarMensagens(self):
-
-        #<span dir="auto" title="Eu" class="_1wjpf _3NFp9 _3FXB1">Eu</span>
-        #<div tabindex="-1" class="_1Plpp">
-        #<span data-icon="send" class="">
-        #<div class="_3zb-j" dir="ltr">
 
         self.driver.get('https://web.whatsapp.com/')
         time.sleep(30)
